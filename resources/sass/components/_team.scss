@@ -1,0 +1,91 @@
+.team {
+    text-align: center;
+
+    & > h2 {
+        margin-bottom: 10rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10rem;
+            bottom: -2rem;
+            height: 4px;
+            border-radius: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--color-black-80);
+        }
+    }
+
+    &__members {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        @include respond(tab-land) {
+            justify-content: center;
+        }
+    }
+
+    &__member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 32.5rem;
+        margin-bottom: 4rem;
+
+        @include respond(tab-port) {
+            &:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+
+            &-founder {
+                order: 1;
+            }
+
+            &-associated {
+                order: 2;
+            }
+
+            &-director {
+                order: 3;
+            }
+        }
+
+        @include respond(phone) {
+            &-founder {
+                order: 1;
+            }
+
+            &-associated {
+                order: 2;
+            }
+
+            &-director {
+                order: 3;
+            }
+
+        }
+
+        &-image {
+            width: 20rem;
+            height: 30rem;
+            border-radius: 5px;
+            object-fit: cover;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 2.5rem;
+        }
+
+        &-name {
+            font-size: 2rem !important;
+        }
+
+        &-ocupation {
+            font-size: 1.5rem;
+            text-transform: capitalize;
+            // color: white;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.heading-primary,
+.heading-primary--black,
+.heading-secondary,
+.heading-tertiary {
+    position: relative;
+    font-family: var(--title-font);
+    font-weight: bold;
+
+    & > a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.heading-primary,
+.heading-primary--black {
+    @include respond(tab-port) {
+        font-size: 4rem !important; 
+    }
+}
+
+.heading-primary {
+    font-size: 5.5rem;
+    letter-spacing: 1rem;
+    margin: 0;
+    @include gold-text;
+}
+
+.heading-primary--black {
+    font-size: 5.5rem;
+    letter-spacing: 1rem;
+    margin: 0;
+    color: var(--color-black-60);
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    color: var(--color-black-60);
+    text-transform: uppercase;
+}
+
+.heading-tertiary {
+    letter-spacing: 0.5rem;
+    font-size: 2.4rem;
+    color: var(--color-black-60);
+    text-transform: uppercase;
+}
+
+.heading-tertiary--gold {
+    position: relative;
+    @include gold-text;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        width: 30%;
+        height: 1px;
+        border-radius: 50%;
+        background-image: var(--gradient-gold);
+        z-index: 9999;
+    }
+}
+
+.heading-tertiary--center {
+    @include respond(phone) {
+        text-align: center;
+
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.heading--gold {
+    @include gold-text;
+}

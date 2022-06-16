@@ -1,0 +1,77 @@
+.dropdown-form {
+    z-index: 2;
+
+    &__select-box {
+        flex: 1;
+        position: relative;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+
+    &__container {
+        display: none;
+        width: 100%;
+        bottom: -1rem;
+        position: absolute;
+        box-shadow: var(--box-shadow);
+        background-color: var(--color-white-100);
+        border-radius: 5px;
+        transform: translateY(100%);
+        overflow: hidden;
+    }
+
+    &__container.active {
+        display: block;
+        z-index: 3;
+    }
+
+    &__container,
+    &__selected {
+        box-shadow: var(--box-shadow-big);
+        background-color: var(--color-white-100);
+        border-radius: 5px;
+    }
+
+    &__option {
+        flex: 1;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__radio {
+        display: none;
+    }
+
+    &__label,
+    &__selected {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        cursor: pointer;
+    }
+
+    &__label {
+        flex: 1;
+        display: block;
+        justify-content: center;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: var(--color-white-60);
+        }
+    }
+
+    &__selected {
+        flex: 1;
+
+        @include respond(tab-port) {
+            justify-content: space-between;
+            flex: 0 0 1;
+        }
+    }
+}

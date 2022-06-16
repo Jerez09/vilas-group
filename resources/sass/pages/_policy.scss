@@ -1,0 +1,40 @@
+.policy {
+    grid-column: center-start / center-end;
+    padding: 8rem 0;
+
+    &__heading {
+        @include flex-column-center;
+
+        @include respond(tab-port) {
+            align-items: flex-start;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        width: 50%;
+
+        @include respond(tab-land) {
+            width: 70%;
+        }
+
+        @include respond(tab-port) {
+            text-align: justify;
+            width: 100%;
+        }
+    }
+}
+
+.term {
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        text-align: justify;
+    }
+}

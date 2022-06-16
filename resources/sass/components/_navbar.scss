@@ -1,0 +1,266 @@
+.navbar {
+    width: 100%;
+    padding: 4rem 0;
+    grid-column: center-start / center-end;
+    z-index: 10;
+
+    @include respond(tab-port) {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        display: none;
+        background-color: var(--color-white-100);
+        height: 6rem;
+        width: 6rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem rgba(#000, 0.1);
+        text-align: center;
+        cursor: pointer;
+
+        @include respond(tab-port) {
+            display: block;
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone) {
+            top: 3rem;
+            right: 3rem;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 3rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: var(--color-black-80);
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        &::before {
+            top: -0.8rem;
+        }
+        &::after {
+            top: 0.8rem;
+        }
+    }
+
+    &__background {
+        display: none;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: var(--gradient-black);
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include respond(tab-port) {
+            display: block;
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        @include respond(phone) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        z-index: 3;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: -50%;
+            z-index: 1500;
+
+            opacity: 0;
+            width: 0;
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+
+    &__item {
+        position: relative;
+        font-family: var(--body-font);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.6;
+        text-transform: uppercase;
+    }
+
+    &__link,
+    &__link:visited {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        @include gold-text;
+
+        &::after {
+            content: "";
+            opacity: 0;
+            top: 4rem;
+            left: 50%;
+            position: absolute;
+            border-radius: 50%;
+            width: 0;
+            height: 2px;
+            background-image: var(--gradient-gold);
+            transition: all 0.2s ease-in;
+            pointer-events: none;
+            transform: translateX(-50%);
+        }
+
+        &:hover::after {
+            opacity: 1;
+            width: 30%;
+        }
+
+        & .material-icons {
+            font-size: 3rem;
+        }
+    }
+
+    //FUNCTIONALITY
+    &:has(&__checkbox:checked) {
+        width: 100vw;
+    }
+
+    &__checkbox:checked ~ &__background {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__list {
+        opacity: 1;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        transition-delay: 0.3;
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: auto;
+    opacity: 0;
+    visibility: hidden;
+    top: 5rem;
+    left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    list-style: none;
+    text-align: center;
+    pointer-events: visible;
+    background-color: var(--color-white-100);
+    box-shadow: var(--box-shadow-big);
+    transition: all 0.19s ease-in;
+    z-index: 1500;
+    overflow: hidden;
+
+    &:hover {
+        opacity: 1;
+        pointer-events: initial;
+    }
+
+    &__item {
+        z-index: 999;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(#000, 0.2);
+        }
+
+        &:hover {
+            pointer-events: initial;
+        }
+    }
+
+    &__link,
+    &__link:visited,
+    &__link:active {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 2rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: var(--color-black-60);
+        font-size: 1.6rem;
+        z-index: 999;
+
+        &:hover {
+            background-color: var(--color-white-60);
+            pointer-events: initial;
+        }
+    }
+}
+
+/* Dropdown menu hover animation */
+.navbar__item:hover .dropdown-menu,
+.dropdown-menu:hover .dropdown-menu,
+.dropdown-menu__item:hover .dropdown-menu,
+.dropdown-menu__link:hover .dropdown-menu {
+    z-index: 999;
+    visibility: visible;
+    opacity: 1;
+}

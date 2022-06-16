@@ -1,0 +1,25 @@
+.body {
+    @include grid-layout;
+    background-color: var(--color-white-60);
+}
+
+.header-home {
+    grid-column: full-start / full-end;
+}
+
+.section-about {
+    grid-column: center-start / full-end;
+
+    @include respond(tab-land) {
+        grid-column: full-start / full-end;
+    }
+}
+
+.section-team {
+    grid-column: full-start / full-end;
+    padding: 10rem 5rem;
+}
+
+.section-contact {
+    grid-column: full-start / full-end;
+}

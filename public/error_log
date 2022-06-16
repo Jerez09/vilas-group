@@ -1,0 +1,20 @@
+[14-Feb-2022 18:39:58 UTC] PHP Warning:  require(/home/m3n8v0uc0id9/public_html/vendor/autoload.php): Failed to open stream: No such file or directory in /home/m3n8v0uc0id9/public_html/index.php on line 34
+[14-Feb-2022 18:39:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/m3n8v0uc0id9/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/m3n8v0uc0id9/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/m3n8v0uc0id9/public_html/index.php on line 34
+[14-Feb-2022 18:40:48 UTC] PHP Warning:  require(/home/m3n8v0uc0id9/public_html/vendor/autoload.php): Failed to open stream: No such file or directory in /home/m3n8v0uc0id9/public_html/index.php on line 34
+[14-Feb-2022 18:40:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/m3n8v0uc0id9/public_html/vendor/autoload.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/m3n8v0uc0id9/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/m3n8v0uc0id9/public_html/index.php on line 34
+[14-Feb-2022 18:41:10 UTC] PHP Warning:  require_once(/home/m3n8v0uc0id9/public_html/bootstrap/app.php): Failed to open stream: No such file or directory in /home/m3n8v0uc0id9/public_html/index.php on line 47
+[14-Feb-2022 18:41:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/m3n8v0uc0id9/public_html/bootstrap/app.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/m3n8v0uc0id9/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/m3n8v0uc0id9/public_html/index.php on line 47
+[14-Feb-2022 18:41:12 UTC] PHP Warning:  require_once(/home/m3n8v0uc0id9/public_html/bootstrap/app.php): Failed to open stream: No such file or directory in /home/m3n8v0uc0id9/public_html/index.php on line 47
+[14-Feb-2022 18:41:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/m3n8v0uc0id9/public_html/bootstrap/app.php' (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/m3n8v0uc0id9/public_html/index.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/m3n8v0uc0id9/public_html/index.php on line 47

@@ -1,0 +1,124 @@
+.index {
+    @include grid-layout;
+    padding: 8rem 0;
+    background-color: var(--color-white-80);
+
+    &__heading {
+        grid-row: 2 / 3;
+        grid-column: center-start / center-end;
+
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__create {
+        display: flex;
+        gap: 1rem;
+        align-self: flex-start;
+        align-items: center;
+        padding: 1.5rem;
+        color: var(--color-black-60);
+        background: var(--color-white-100);
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            box-shadow: var(--box-shadow-big);
+        }
+
+        @include respond(tab-port) {
+            align-self: center;
+        }
+    }
+
+    &__results {
+        grid-row: 3 / 4;
+        grid-column: center-start / center-end;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--color-black-60);
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8rem;
+        }
+    }
+
+    &__not-found {
+        padding: 8rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+
+        & img {
+            height: 15rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__container {
+        grid-row: 4 / 5;
+        grid-column: center-start / center-end;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__pagination {
+        grid-row: 5 / 6;
+        grid-column: center-start / center-end;
+
+        & > nav,
+        & p,
+        & span,
+        & a {
+            font-size: 1.6rem !important;
+        }
+
+        & nav {
+            margin-top: 2rem;
+            align-items: center;
+        }
+
+        & a,
+        & span.relative:not(.shadow-sm) {
+            padding: 1.5rem;
+        }
+
+        & .hidden {
+            justify-content: center;
+
+            div:first-child {
+                display: none;
+            }
+        }
+
+        & svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

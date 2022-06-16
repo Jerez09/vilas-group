@@ -1,0 +1,47 @@
+.investments {
+    grid-row: 1 / 2;
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+.invest {
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white-100);
+
+    &.active &__content {
+        max-height: 100%;
+        padding: 0 6rem 2.5rem 6rem;
+    }
+
+    &__heading {
+        display: flex;
+        padding: 2.5rem 6rem;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__content {
+        max-height: 0;
+        padding: 0 6rem 0 6rem;
+        overflow: hidden;
+    }
+
+    &__description {
+        font-weight: bold;
+    }
+
+    &__reasons {
+        margin-top: 2rem;
+    }
+
+    &__reason {
+        list-style: disc;
+        margin-bottom: 1rem;
+    }
+}

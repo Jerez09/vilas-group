@@ -1,0 +1,56 @@
+.dialog {
+    position: fixed;
+    opacity: 0;
+    backdrop-filter: blur(5px) brightness(0.5);
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    scroll-behavior: none;
+    transition: opacity 0.5s, height 0.5s 0.5s;
+
+    &.active {
+        opacity: 1;
+        height: 100vh;
+    }
+
+    &__container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        width: 45rem;
+        padding: 4rem;
+        top: -20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        box-shadow: var(--box-shadow-big);
+        background-color: var(--color-white-100);
+        transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    &.active &__container {
+        opacity: 1;
+        top: 50%;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        cursor: pointer;
+        border: none;
+        background: none;
+        padding: 1rem;
+        color: var(--color-black-60);
+    }
+
+    &__icon {
+        @include gold-text;
+        margin-bottom: 2.5rem;
+        text-shadow: var(--box-shadow);
+    }
+}

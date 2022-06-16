@@ -1,0 +1,151 @@
+{
+    "Inicio": "Home",
+    "Quiénes somos": "About us",
+    "Nuestro equipo": "Our team",
+    "Paises": "Countries",
+    "Contáctanos": "Contact us",
+    "ES": "EN",
+
+    "Estados Unidos": "United States",
+    "México": "Mexico",
+    "Panamá": "Panama",
+    "Dubái": "Dubai",
+
+    "Enlaces": "Links",
+    "Redes Sociales": "Social media",
+    "Propiedades": "Properties",
+    "Lujos": "Luxuries",
+
+    "Encuentra tu hogar perfecto": "Find your perfect home",
+    "Encuentra tu pasión": "Find your passion",
+
+    "País": "Country",
+    "Operación": "Operation",
+    "Tipo de inmueble": "Property type",
+    "Tipo de lujo": "Luxury type",
+    "Buscar": "Search",
+
+    "Departamento": "Apartment",
+    "Casa": "House",
+    "Oficina": "Office",
+    "Terreno": "Terrain",
+    "Otros": "Others",
+
+    "Precio mín": "Min. Price",
+    "Precio max": "Max. Price",
+    "Recámaras": "Bedrooms",
+    "Baños": "Bathrooms",
+
+    "Búsqueda avanzada": "Advanced search",
+
+    "Resultados de la búsqueda": "Search results",
+    "propiedad": "property",
+    "propiedades": "properties",
+    "Precio ascendente": "Lowest price first",
+    "Precio descendente": "Highest price first",
+
+    "producto": "product",
+    "productos": "products",
+
+    "Agregar propiedad": "Add property",
+    "Agregar lujo": "Add luxury",
+
+    "No hay resultados para mostrar": "Nothing was found",
+    "No hay propiedades para mostrar": "No properties found",
+    "No hay productos para mostrar": "No products found",
+
+    "Editar": "Edit",
+    "Eliminar": "Delete",
+    "Arriendo": "Rental",
+    "Venta": "Sale",
+    "Venta - Arriendo": "Rental - Sale",
+    "Ver más": "Show more",
+
+    "Compartir": "Share",
+    "Detalles": "Details",
+    "Ubicación": "Location",
+    "recámaras": "bedrooms",
+    "baños": "bathrooms",
+    "estacionamientos": "parking lots",
+
+    "Crear Propiedad": "Create property",
+    "Crear Luxury": "Create luxury",
+
+    "Titulo": "Title",
+    "Titulo - Inglés": "Title - English",
+    "Precio": "Price",
+    "Tipo de propiedad": "Property type",
+    "Área": "Area",
+    "Estacionamientos": "Parking lots",
+    "Descripción": "Description",
+    "Descripción - Inglés": "Description - English",
+    "Mapa": "Map",
+    "Miniatura": "Thumbnail",
+    "Imágenes": "Images",
+
+    "Nombre": "Name",
+    "Ingrese su nombre...": "Enter your name",
+    "Ingrese su email...": "Enter your email",
+    "Mensaje": "Message",
+    "Enviar": "Send",
+
+    "Hubo un error al tratar de actualizar la propiedad.": "There was a problem trying to update the property.",
+    "Hubo un error al tratar de actualizar el producto.": "There was a problem trying to update the product.",
+    "Hubo un error al tratar de crear la propiedad.": "There was a problem trying to create the property.",
+    "Hubo un error al tratar de crear la product.": "There was a problem trying to create the product.",
+    "Hubo un error al tratar de eliminar la propiedad.": "There was a problem trying to delete the property.",
+    "Hubo un error al tratar de eliminar el product.": "There was a problem trying to delete the product.",
+
+    "Propiedad eliminada correctamente.": "Property deleted successfully.",
+    "Producto eliminada correctamente.": "Product deleted successfully.",
+    "Propiedad actualizada correctamente.": "Property updated successfully.",
+    "Producto actualizada correctamente.": "Product updated successfully.",
+    "Propiedad creada correctamente.": "Property created successfully.",
+    "Product creada correctamente.": "Product created successfully.",
+
+    "EAU": "AED",
+
+    "No lo sueñes, vívelo": "Don't dream it, live it",
+
+    "Vilas Group Luxury & Real Estate es un proyecto que inció en el 2021 con la finalidad de crear un equipo de líderes dentro del mundo de los bienes raíces, utilizando la tecnología y herramientas del mundo actual como canales de venta.": "Vilas Group Luxury & Real Estate is a project that began in 2021 with the aim of creating a team of leaders within the world of real estate, using the technology and tools of the current world as sales channels.",
+
+    "Nos caracteriza el liderazgo, la pasión y el éxito.": "We are characterized by leadership, passion and success.",
+
+    "fundador": "founder",
+    "directora de planificación estratégica": "strategic planning director",
+    "asociado": "associated",
+    "asociada": "associated",
+
+    "Su mensaje ha sido enviado.": "Message sent successfully.",
+    "Su mensaje no se ha podido enviar.": "There was a problem sending your message.",
+
+    "Política de privacidad": "Privacy policy",
+    "Esta política de privacidad explica cómo recopilamos información de usted y para qué se utiliza.": "This privacy policy explains how we collect information from you and for what purpose it is used for.",
+
+    "Información que proporciona": "Information you provide",
+    "Puede proporcionarnos información de contacto personal de varias maneras, incluido el envío de una consulta de propiedad, comunicarse con nosotros por correo electrónico, completar una encuesta, participar en una competencia, completar una revisión, proporcionar comentarios o informar un problema. Solo almacenamos sus datos personales después de que haya dado su consentimiento al aceptar nuestros términos y condiciones en el formulario.": "You may provide us with personal contact information in several ways including sending a property enquiry, corresponding with us via email, completing a survey, entering a competition, completing a review, provide feedback or reporting an issue. We only store your personal data after you have consented by agreeing to our terms and conditions on the form.",
+
+    "Información que recopilamos": "Information we collect",
+    "Recopilamos automáticamente metadatos de su navegador web limitados al tipo y la versión, la marca y el modelo del dispositivo, su dirección IP, el dominio de referencia y la configuración de idioma del navegador.": "We automatically collect Meta data from your web browser limited to the type and version, the device make and model, your IP address, the referral domain, and the browser language setting.",
+
+    "Formas en que podríamos compartir su información personal": "Ways in which we may share your personal information",
+    "Proporcionamos su nombre, correo electrónico y número de teléfono a los agentes cada vez que envía una consulta de propiedad en Vilas Group Luxury & Real Estate. Una vez que hayamos enviado estos datos, la propia política de privacidad de los agentes se aplicará a cómo los usan. Enviamos información sobre su visita a proveedores de motores de búsqueda y análisis con el fin de mejorar nuestros servicios. Estos datos incluyen IP, la dirección, las páginas visitadas y el tipo de navegador, pero no contienen ningún identificador personal directo, como el nombre o la dirección de correo electrónico. Podemos enviar sus metadatos a redes publicitarias con el fin de mostrarle anuncios relevantes. Si se adquiere Vilas Group Luxury & Real Estate o sus activos, los datos de usuario que tenemos serán parte de la transferencia. Si obtenemos asesoramiento profesional (por ejemplo, de abogados o asesores financieros), podemos divulgar su información personal. Podemos divulgar su información personal si así lo exige un gobierno o una autoridad reguladora.": "We provide your given name, email and phone number to agents whenever you send a property enquiry on Vilas Group Luxury & Real Estate. Once we have sent this data, the agents own privacy policy will apply to how they use it. We send information about your visit to analytics and search engine providers for the purposes of improving our services. This data includes IP the address, pages visited and browser type, but does not contain any direct personal identifiers such as name or email address. We may send your Meta Data to advertising networks for the purpose of serving relevant ads to you. If Vilas Group Luxury & Real Estate or its assets is acquired, the user data that we hold will be part of the transfer. If we obtain professional advice (e.g. from lawyers or financial advisors) we may disclose your personal information. We may disclose your personal information if we are required to do so by a government or regulatory authority.",
+
+    "Formas en que utilizamos su información personal": "Ways in which we use your personal information",
+    "Satisfacer sus solicitudes, como reenviar consultas sobre propiedades a agentes o desarrolladores. Proporcionarle información sobre los servicios de Vilas Group Luxury & Real Estate que puedan interesarle. Cualquier correo electrónico de marketing que le enviemos tendrá la opción de darse de baja. Mejorar su experiencia de nuestros servicios, p. asegurando que el contenido se presente de la manera más efectiva para su dispositivo. Entregarle publicidad relevante en nuestro sitio u otros sitios operados por Vilas Group Luxury & Real Estate. Administración empresarial interna, análisis de datos, solución de problemas, pruebas e investigación.": "Fulfilling your requests such as forwarding property enquiries to agents or developers. Providing you with information on Vilas Group Luxury & Real Estate services that may interest you. Any marketing emails that we send you will have the option to unsubscribe. Enhancing your experience of our services e.g. ensuring content is presented in the most effective manner for your device. Delivering relevant advertising to you on our site or other sites operated by Vilas Group Luxury & Real Estate. Internal business administration e.g. data analysis, troubleshooting, testing and research.",
+
+    "Almacenamiento de su información personal": "Storing your personal information",
+    "Podemos almacenar su información en servidores seguros en cualquier parte del mundo. Al enviar su información personal, acepta esta transferencia, almacenamiento o procesamiento. Dondequiera que estén nuestros servidores, confiamos en mecanismos de transferencia de datos aprobados para garantizar que su información personal esté debidamente protegida. Una vez que nos ha enviado sus datos, utilizamos procedimientos estrictos para garantizar que sus datos estén seguros; sin embargo, no podemos garantizar su seguridad. Cualquier dato que nos envíe se envía bajo su propio riesgo. Cuando tenga una contraseña que le permita acceder a algunas partes de nuestros sitios web, usted es responsable de mantener la confidencialidad de esa contraseña. No debe compartir su contraseña con nadie.": "We may store your information on secure servers anywhere in the world. By submitting your personal information, you agree to this transfer, storing or processing. Wherever our servers are, we rely on approved data transfer mechanisms to ensure that your personal information is adequately safeguarded. Once you have sent us your data we use strict procedures to ensure that your data is secure, however we cannot guarantee its security. Any data that you send to us is sent at your own risk. Where you have a password to enable you to access some parts of our websites, you are responsible for keeping that password confidential. You must not share your password with anyone.",
+
+    "Solicitar la eliminación de datos": "Requesting data deletion",
+    "Conservamos su información personal durante el tiempo que sea necesario para los fines para los que fue solicitada. Si desea eliminar su información de nuestros servidores, puede solicitarnos que lo hagamos poniéndose en contacto con nosotros.": "We keep your personal information for as long as is necessary for the purposes for which it was requested. If you would like to delete your information from our servers you may request us to do so by contacting us.",
+
+    "Cookies": "Cookies",
+    "Usamos cookies para distinguirlo de otros usuarios de Vilas Group Luxury & Real Estate. Esto nos permite personalizar su experiencia cuando utiliza nuestro sitio web, p. recordando su moneda elegida o sus propiedades favoritas. La red publicitaria de Google utiliza una cookie para registrar su actividad (incluidas las páginas visitadas) y estimar qué información le interesa más. Utilizan esta información de acuerdo con sus propias políticas de privacidad.": "We use cookies to distinguish you from other users of Vilas Group Luxury & Real Estate. This allows us to customise your experience when you use our website e.g. by remembering your chosen currency or your favourite properties. Google advertising network uses a cookie to record your activity (including pages visited) and estimate what information interests you most. They use this information in accordance with their own privacy policies",
+
+    "Enlaces a sitios web de terceros": "Links to third party websites",
+    "Siempre que nuestro sitio web contenga enlaces a otros sitios web, esta política de privacidad no se aplica a esos otros sitios web y no aceptamos responsabilidad por el contenido de ningún otro sitio web. Consulte la política de privacidad de cualquier otro sitio web antes de enviarle información personal.": "Wherever our website contains links to other websites this privacy policy does not apply to those other websites and we do not accept liability for the content of any other website. Please check the privacy policy of any other website before submitting any personal information to it.",
+
+    "Contactando con nosotros": "Contacting us",
+    "Cualquier cambio que podamos hacer a esta Política en el futuro se publicará en esta página. Si tiene alguna pregunta con respecto a esta política de privacidad, puede comunicarse con nosotros.": "Any changes we may make to this Policy in the future will be posted on this page. If there are any questions regarding this privacy policy, you may contact us."
+}

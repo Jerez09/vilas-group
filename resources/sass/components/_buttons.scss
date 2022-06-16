@@ -1,0 +1,27 @@
+.button {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: var(--color-black-60);
+    padding: 1rem 1.5rem;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.button-small {
+    font-size: 1.6rem;
+    font-family: var(--body-font);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.button-gold {
+    position: relative;
+    @include gold-text;
+}

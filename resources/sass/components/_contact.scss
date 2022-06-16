@@ -1,0 +1,54 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url("../../../public/images/contact_background.jpg");
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(white, 0.9);
+        border-radius: 5px;
+        padding: 4rem 2rem;
+        box-shadow: var(--box-shadow);
+
+        &-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2.5rem;
+        }
+
+        &-input,
+        &-textarea {
+            background-color: transparent;
+            outline: none;
+            padding: .5rem 0.5rem;
+        }
+
+        &-input {
+            border: none;
+            border-bottom: 1px solid var(--color-black-80);
+        }
+
+        &-textarea {
+            resize: none;
+        }
+
+        &-label {
+            font-weight: 600;
+            margin-bottom: .5rem;
+        }
+
+        &-button {
+            margin-top: 1.5rem;
+        }
+    }
+}

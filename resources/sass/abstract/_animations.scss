@@ -1,0 +1,50 @@
+@keyframes move-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(3px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes dropIn {
+    20% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+
+    30%,
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: calc(var(--order) * 250ms);
+}
+
+.dropIn {
+    opacity: 0;
+    animation: dropIn 8s ease-in forwards;
+    animation-delay: calc(var(--order) * 150ms);
+}
