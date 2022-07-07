@@ -219,7 +219,7 @@
             </div>
 
             <div class="flex flex-wrap -mx-3 mb-9">
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <div class="invisible w-0">
                     <label
                         class="
                                 block

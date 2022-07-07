@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'Filosofia';
+    src: url('/fonts/Filosofia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    letter-spacing: 0.2px !important;
+}
+
+@font-face {
     font-family: 'Fino Sans';
     src: url('/fonts/FinoSans-Bold.ttf') format('truetype');
     font-weight: bold;

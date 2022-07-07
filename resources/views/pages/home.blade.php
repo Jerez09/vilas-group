@@ -1,8 +1,13 @@
 @extends('layout.index')
 
+@push('metatags')
+    <meta rel="canonical" href="vilas-group.com">
+    <meta name="keywords" content="lujos, luxuries, propiedades, properties, house, casa, departamento, deparment" />
+@endpush
+
 @section('title', 'Vilas Group | Luxury & Real Estate')
 
-@section('description', 'No lo sueñes, vívelo')
+@section('description', 'Vilas Group Luxury & Real Estate es un proyecto que inció en el 2021 con la finalidad de crear un equipo de líderes dentro del mundo de los bienes raíces, utilizando la tecnología y herramientas del mundo actual como canales de venta.')
 
 @section('content')
     {{-- Displays message when creating or updating property --}}
@@ -23,7 +28,8 @@
                 <x-layout.navbar />
 
                 <div class="header__logo fadeIn">
-                    <img src="{{ asset('/images/logo.png') }}" alt="Logo - Vilas Group | Luxury & Real Estate" loading="lazy">
+                    <img src="{{ asset('/images/logo.png') }}" alt="Logo - Vilas Group | Luxury & Real Estate"
+                        loading="lazy">
                 </div>
 
                 <div class="header__links">
@@ -56,7 +62,8 @@
                         {{ __('Nos caracteriza el liderazgo, la pasión y el éxito.') }}
                     </strong>
                 </div>
-                <video class="about__video" src="{{ asset('videos/about_video.mp4') }}" loading="lazy" muted autoplay loop></video>
+                <video class="about__video" src="{{ asset('videos/about_video.mp4') }}" loading="lazy" muted autoplay
+                    loop></video>
             </div>
         </section>
 
@@ -65,25 +72,29 @@
                 <h2 class="heading-secondary u-margin-bottom-big">{{ __('Nuestro equipo') }}</h2>
                 <div class="team__members">
                     <div class="team__member team__member-associated">
-                        <img class="team__member-image" src="{{ asset('images/members/member_2.jpg') }}" loading="lazy" alt="Socio 1" />
+                        <img class="team__member-image" src="{{ asset('images/members/member_2.jpg') }}" loading="lazy"
+                            alt="Socio 1" />
                         <h3 class="team__member-name heading-tertiary">Inna Moll</h3>
                         <span class="team__member-ocupation">{{ __('asociada') }}</span>
                     </div>
 
                     <div class="team__member team__member-founder">
-                        <img class="team__member-image" src="{{ asset('images/members/member_4.jpg') }}" loading="lazy" alt="Socio 1" />
+                        <img class="team__member-image" src="{{ asset('images/members/member_4.jpg') }}" loading="lazy"
+                            alt="Socio 1" />
                         <h3 class="team__member-name heading-tertiary">José Carlos Vilas</h3>
                         <span class="team__member-ocupation">{{ __('fundador') }}</span>
                     </div>
 
                     <div class="team__member team__member-associated">
-                        <img class="team__member-image" src="{{ asset('images/members/member_1.jpg') }}" loading="lazy" alt="Socio 1" />
+                        <img class="team__member-image" src="{{ asset('images/members/member_1.jpg') }}" loading="lazy"
+                            alt="Socio 1" />
                         <h3 class="team__member-name heading-tertiary">Juan Matamala</h3>
                         <span class="team__member-ocupation">{{ __('asociado') }}</span>
                     </div>
 
                     <div class="team__member team__member-director">
-                        <img class="team__member-image" src="{{ asset('images/members/member_3.jpg') }}" loading="lazy" alt="Socio 1" />
+                        <img class="team__member-image" src="{{ asset('images/members/member_3.jpg') }}" loading="lazy"
+                            alt="Socio 1" />
                         <h3 class="team__member-name heading-tertiary">Daniella Belmont</h3>
                         <span class="team__member-ocupation">{{ __('directora de planificación estratégica') }}</span>
                     </div>
@@ -122,8 +133,7 @@
 
                     <div class="contact__form-group">
                         <label class="contact__form-label" for="message">{{ __('Mensaje') }}</label>
-                        <textarea class="contact__form-textarea" id="message" name="message" cols="40" rows="6"
-                            required>{{ old('text') }}</textarea>
+                        <textarea class="contact__form-textarea" id="message" name="message" cols="40" rows="6" required>{{ old('text') }}</textarea>
                         @error('message')
                             <div class=" text-red-500 mt-2 text-sm">
                                 {{ $message }}

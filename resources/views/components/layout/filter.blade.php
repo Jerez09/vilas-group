@@ -25,36 +25,39 @@
             </div>
         </div>
 
-        <div class="dropdown-form__select-box">
-            <div class="dropdown-form__container">
-                @if (Str::contains(Request::url(), 'properties'))
+        @if (Str::contains(Request::url(), 'properties'))
+            <div class="dropdown-form__select-box">
+                <div class="dropdown-form__container">
                     <div class="dropdown-form__option">
                         <input type="radio" name="operation" id="" class="dropdown-form__radio" disabled />
                         <label class="dropdown-form__label" for="">{{ __('Operación') }}</label>
                     </div>
-                @endif
 
-                <div class="dropdown-form__option">
-                    <input type="radio" name="operation" id="rental" class="dropdown-form__radio" value="1" />
-                    <label class="dropdown-form__label" for="rental">{{ __('Arriendo') }}</label>
+                    <div class="dropdown-form__option">
+                        <input type="radio" name="operation" id="rental" class="dropdown-form__radio"
+                            value="1" />
+                        <label class="dropdown-form__label" for="rental">{{ __('Arriendo') }}</label>
+                    </div>
+
+                    <div class="dropdown-form__option">
+                        <input type="radio" name="operation" id="sale" class="dropdown-form__radio"
+                            value="2" />
+                        <label class="dropdown-form__label" for="sale">{{ __('Venta') }}</label>
+                    </div>
+
+
+                    <div class="dropdown-form__option">
+                        <input type="radio" name="operation" id="both" class="dropdown-form__radio"
+                            value="3" />
+                        <label class="dropdown-form__label" for="both">{{ __('Venta - Arriendo') }}</label>
+                    </div>
                 </div>
 
-                <div class="dropdown-form__option">
-                    <input type="radio" name="operation" id="sale" class="dropdown-form__radio" value="2" />
-                    <label class="dropdown-form__label" for="sale">{{ __('Venta') }}</label>
-                </div>
-
-
-                <div class="dropdown-form__option">
-                    <input type="radio" name="operation" id="both" class="dropdown-form__radio" value="3" />
-                    <label class="dropdown-form__label" for="both">{{ __('Venta - Arriendo') }}</label>
+                <div class="dropdown-form__selected dropdown-menu__selected-operation">
+                    {{ __('Operación') }} <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </div>
             </div>
-
-            <div class="dropdown-form__selected dropdown-menu__selected-operation">
-                {{ __('Operación') }} <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </div>
-        </div>
+        @endif
 
         <div class="dropdown-form__select-box">
             <div class="dropdown-form__container">
@@ -88,7 +91,7 @@
             </div>
 
             <div class="dropdown-form__selected dropdown-menu__selected-type">
-                {{ Str::contains(Request::url(), 'properties') ? __('Tipo de inmueble') : __('Tipo') }}
+                {{ Str::contains(Request::url(), 'properties') ? __('Tipo de inmueble') : __('Tipo de lujo') }}
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
             </div>
         </div>

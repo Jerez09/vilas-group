@@ -8,6 +8,8 @@ use App\Http\Controllers\Email\ContactController;
 use App\Http\Controllers\Luxury\LuxuryController;
 use App\Http\Controllers\Property\PropertyController;
 use App\Http\Controllers\Property\CreatePropertyController;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------

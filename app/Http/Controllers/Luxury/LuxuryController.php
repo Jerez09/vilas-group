@@ -48,7 +48,7 @@ class LuxuryController extends Controller
 
         // Social links functions
         $social_share = Share::page(
-            'https://thehousting.com/luxuries/' . $luxury->slug,
+            url('') . '/luxuries/' . $luxury->slug,
             $luxury->title
         )
             ->facebook()
@@ -83,6 +83,7 @@ class LuxuryController extends Controller
 
         // Handle thumbnail Upload
         if ($request->hasFile('thumbnail')) {
+
             $file = $request->file('thumbnail');
 
             $thumbnail = saveThumbnail($path, $file);
