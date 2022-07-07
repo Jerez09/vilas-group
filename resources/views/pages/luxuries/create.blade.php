@@ -90,8 +90,8 @@
                                 focus:outline-none focus:bg-white
                                 @error('price') border-red-500 @enderror
                             "
-                            value="{{ old('price') }}" id="price" type="number" name="price" min="0" step="1"
-                            required />
+                            value="{{ old('price') }}" id="price" type="number" name="price" min="0"
+                            step="1" required />
                         @error('price')
                             <div class=" text-red-500 mt-2 text-sm">
                                 {{ $message }}
@@ -193,7 +193,7 @@
             </div>
 
             <div class="flex flex-wrap -mx-3 mb-9">
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <div class="invisible w-0">
                     <label
                         class="
                                 block
@@ -226,9 +226,9 @@
                                     @error('operation') border-red-500 @enderror
                                 "
                             value="{{ old('operation') }}" id="grid-state" name="operation" required>
-                            <option selected disabled hidden></option>
+                            <option disabled hidden></option>
                             <option value="1">{{ __('Arriendo') }}</option>
-                            <option value="2">{{ __('Venta') }}</option>
+                            <option value="2" selected>{{ __('Venta') }}</option>
                             <option value="3">{{ __('Venta y arriendo') }}</option>
                         </select>
                         <div
@@ -463,7 +463,7 @@
                                 focus:border-gray-500
                                 @error('map') border-red-500 @enderror
                             "
-                            id="map" name="map" required>{{ old('map') }}</textarea>
+                        id="map" name="map" required>{{ old('map') }}</textarea>
                     @error('map')
                         <div class=" text-red-500 mt-2 text-sm">
                             {{ $message }}
@@ -544,8 +544,8 @@
                                 focus:border-gray-500
                                 @error('images') border-red-500 @enderror
                             "
-                        value="{{ old('images') }}" aria-describedby="images" id="images" type="file" name="images[]"
-                        multiple="true" required />
+                        value="{{ old('images') }}" aria-describedby="images" id="images" type="file"
+                        name="images[]" multiple="true" required />
                     @error('images')
                         <div class=" text-red-500 mt-2 text-sm">
                             {{ $message }}
@@ -584,11 +584,11 @@
             </div>
         </form>
     </main>
-    <script>
+    <script defer>
         CKEDITOR.replace("editor");
         CKEDITOR.replace("editor2");
     </script>
-    <script src="{{ asset('js/FileInput.js') }}"></script>
+    <script src="{{ asset('js/FileInput.js') }}" defer></script>
 </body>
 
 </html>

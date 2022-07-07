@@ -1,6 +1,7 @@
 .footer {
-    padding: 8rem 0;
+    padding: 6rem 0;
     @include grid-layout;
+    grid-template-rows: auto-fit auto-fit;
     position: relative;
     box-shadow: var(--box-shadow-big-top);
     background-color: var(--color-black-100);
@@ -94,6 +95,19 @@
 
         &:hover {
             @include gold-text;
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        color: white;
+        margin-top: 4rem;
+        grid-column: center-start / center-end;
+        z-index: 2;
+
+        & a {
+            @include gold-text;
+            cursor: pointer;
         }
     }
 }

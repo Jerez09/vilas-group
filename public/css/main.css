@@ -7,10 +7,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -45,12 +43,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -58,10 +53,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -78,13 +71,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -102,10 +92,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -155,14 +143,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -170,8 +154,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -180,8 +163,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -230,18 +212,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -264,10 +240,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -283,10 +257,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -301,10 +273,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -339,27 +309,37 @@ template {
   display: none;
 }
 
-@-webkit-keyframes move-left {
-  0% {
-    transform: translateX(0);
+@-webkit-keyframes moveLeft {
+  0%, 100% {
+    transform: translateX(0px);
   }
   50% {
-    transform: translateX(3px);
-  }
-  100% {
-    transform: translateX(0);
+    transform: translateX(-10px);
   }
 }
 
-@keyframes move-left {
-  0% {
-    transform: translateX(0);
+@keyframes moveLeft {
+  0%, 100% {
+    transform: translateX(0px);
   }
   50% {
-    transform: translateX(3px);
+    transform: translateX(-10px);
   }
-  100% {
-    transform: translateX(0);
+}
+@-webkit-keyframes moveRight {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+@keyframes moveRight {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
   }
 }
 @-webkit-keyframes fadeIn {
@@ -402,20 +382,30 @@ template {
     transform: translateY(0);
   }
 }
+.moveLeft {
+  -webkit-animation: moveLeft 1s infinite;
+          animation: moveLeft 1s infinite;
+}
+
+.moveRight {
+  -webkit-animation: moveRight 1s infinite;
+          animation: moveRight 1s infinite;
+}
+
 .fadeIn {
   opacity: 0;
-  -webkit-animation: fadeIn 2s ease-in-out forwards;
-          animation: fadeIn 2s ease-in-out forwards;
-  -webkit-animation-delay: calc(var(--order) * 250ms);
-          animation-delay: calc(var(--order) * 250ms);
+  -webkit-animation: fadeIn 1s ease-in-out forwards;
+          animation: fadeIn 1s ease-in-out forwards;
+  -webkit-animation-delay: calc(var(--order) * 50ms);
+          animation-delay: calc(var(--order) * 50ms);
 }
 
 .dropIn {
   opacity: 0;
-  -webkit-animation: dropIn 8s ease-in forwards;
-          animation: dropIn 8s ease-in forwards;
-  -webkit-animation-delay: calc(var(--order) * 150ms);
-          animation-delay: calc(var(--order) * 150ms);
+  -webkit-animation: dropIn 6s ease-in forwards;
+          animation: dropIn 6s ease-in forwards;
+  -webkit-animation-delay: calc(var(--order) * 50ms);
+          animation-delay: calc(var(--order) * 50ms);
 }
 
 /*
@@ -442,6 +432,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 :root {
+  --links-font: "Filosofia", sans-serif;
   --body-font: "Montserrat", sans-serif;
   --title-font: "Fino Sans Title Md", sans-serif;
   --color-white-100: #ffffff;
@@ -795,9 +786,15 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .chat {
-    width: 7rem;
-    height: 7rem;
     font-size: 2.5rem;
+    top: 12rem;
+    right: 4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .chat {
+    top: 12rem;
+    right: 3rem;
   }
 }
 .chat__icon {
@@ -1240,7 +1237,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .header__links {
-    padding: 2rem 0;
+    padding: 6rem 0;
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -1258,9 +1255,11 @@ body {
   -moz-text-fill-color: transparent;
   text-fill-color: transparent;
   background-image: var(--gradient-gold);
-  font-size: 3.2rem;
+  font-family: var(--links-font);
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: 500;
+  text-decoration: none;
 }
 @media only screen and (max-width: 37.5em) {
   .header__link-arrow {
@@ -1349,7 +1348,7 @@ body {
 .team__members {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
 }
 @media only screen and (max-width: 75em) {
@@ -1369,9 +1368,30 @@ body {
   .team__member:not(:last-child) {
     margin-bottom: 8rem;
   }
+  .team__member-founder {
+    order: 1;
+  }
+  .team__member-associated {
+    order: 2;
+  }
+  .team__member-director {
+    order: 3;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .team__member-founder {
+    order: 1;
+  }
+  .team__member-associated {
+    order: 2;
+  }
+  .team__member-director {
+    order: 3;
+  }
 }
 .team__member-image {
   width: 20rem;
+  height: 30rem;
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1434,13 +1454,14 @@ body {
 }
 
 .footer {
-  padding: 8rem 0;
+  padding: 6rem 0;
   display: grid;
   justify-content: center;
   grid-template-rows: repeat(-webkit-min-content, auto);
   grid-template-rows: repeat(min-content, auto);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: auto-fit auto-fit;
   position: relative;
   box-shadow: var(--box-shadow-big-top);
   background-color: var(--color-black-100);
@@ -1546,6 +1567,23 @@ body {
   -moz-text-fill-color: transparent;
   text-fill-color: transparent;
   background-image: var(--gradient-gold);
+}
+.footer__copyright {
+  text-align: center;
+  color: white;
+  margin-top: 4rem;
+  grid-column: center-start/center-end;
+  z-index: 2;
+}
+.footer__copyright a {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-image: var(--gradient-gold);
+  cursor: pointer;
 }
 
 .navbar {
@@ -1667,10 +1705,11 @@ body {
   line-height: 1.6;
   text-transform: uppercase;
 }
-.navbar__link, .navbar__link:visited {
+.navbar__link, .navbar__link:active, .navbar__link:visited {
   position: relative;
   display: flex;
   align-items: center;
+  text-decoration: none;
   gap: 0.5rem;
   cursor: pointer;
   -webkit-background-clip: text;
@@ -1681,7 +1720,7 @@ body {
   text-fill-color: transparent;
   background-image: var(--gradient-gold);
 }
-.navbar__link::after, .navbar__link:visited::after {
+.navbar__link::after, .navbar__link:active::after, .navbar__link:visited::after {
   content: "";
   opacity: 0;
   top: 4rem;
@@ -1695,11 +1734,11 @@ body {
   pointer-events: none;
   transform: translateX(-50%);
 }
-.navbar__link:hover::after, .navbar__link:visited:hover::after {
+.navbar__link:hover::after, .navbar__link:active:hover::after, .navbar__link:visited:hover::after {
   opacity: 1;
   width: 30%;
 }
-.navbar__link .material-icons, .navbar__link:visited .material-icons {
+.navbar__link .material-icons, .navbar__link:active .material-icons, .navbar__link:visited .material-icons {
   font-size: 3rem;
 }
 .navbar:has(.navbar__checkbox:checked) {
@@ -2149,14 +2188,10 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
 @media only screen and (max-width: 37.5em) {
   .carousel__left-button, .carousel__right-button {
@@ -2366,6 +2401,14 @@ body {
   box-shadow: var(--box-shadow);
 }
 
+@font-face {
+  font-family: "Filosofia";
+  src: url("/fonts/Filosofia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  letter-spacing: 0.2px !important;
+}
 @font-face {
   font-family: "Fino Sans";
   src: url("/fonts/FinoSans-Bold.ttf") format("truetype");

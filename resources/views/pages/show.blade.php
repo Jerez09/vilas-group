@@ -18,6 +18,13 @@ $slug = $product->slug;
 
 @extends('layout.index')
 
+@push('metatags')
+    <meta name="og:title" property="og:title" content="{{ $product->title }}" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="{{ Request::url() }}" />
+    <meta property="og:image" content="{{ url('') . '/storage/app/public/' . $route . '/' . $product->slug . '/' . $product->thumbnail }}" />
+@endpush
+
 @section('title', 'Vilas Group | Luxury & Real Estate')
 
 @section('description', $locale == 'en' ? $product->title : $product->title_translated)

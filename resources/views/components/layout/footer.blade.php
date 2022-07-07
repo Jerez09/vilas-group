@@ -34,4 +34,6 @@
             </div>
         </div>
     </div>
+
+    <small class="footer__copyright">&copy; Vilas Group 2022 | Made by <a href="https://www.linkedin.com/in/jerezjustin/">Justin Jerez</a></small>
 </footer>

@@ -126,10 +126,12 @@
     }
 
     &__link,
+    &__link:active,
     &__link:visited {
         position: relative;
         display: flex;
         align-items: center;
+        text-decoration: none;
         gap: 0.5rem;
         cursor: pointer;
         @include gold-text;

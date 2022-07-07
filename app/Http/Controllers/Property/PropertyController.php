@@ -65,7 +65,7 @@ class PropertyController extends Controller
 
         // Social links functions
         $social_share = Share::page(
-            'https://thehousting.com/properties/' . $property->slug,
+            url('') . '/properties/' . $property->slug,
             $property->title
         )
             ->facebook()

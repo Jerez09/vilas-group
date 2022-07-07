@@ -126,7 +126,7 @@
         padding: 6rem 0;
 
         @include respond(tab-port) {
-            padding: 2rem 0;
+            padding: 6rem 0;
         }
 
         @include respond(phone) {
@@ -138,9 +138,11 @@
 
     &__link {
         @include gold-text;
-        font-size: 3.2rem;
+        font-family: var(--links-font);
+        font-size: 4rem;
         text-transform: uppercase;
         font-weight: 500;
+        text-decoration: none;
 
         @include respond(phone) {
             &-arrow {
